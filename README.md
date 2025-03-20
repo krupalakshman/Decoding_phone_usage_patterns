@@ -1,106 +1,92 @@
-Decoding Phone Usage Patterns in India
+# Decoding Phone Usage Patterns in India
 
-Technical Tags
+## Technical Tags
 
 Python, Machine Learning, Multi-class classification, Clustering, User Behavior Analysis, StreamlitDomain
 
-Problem Statement
+## Problem Statement
 
 Design a system to analyze mobile device usage and behavior using a dataset containing user information and device statistics. The project involves data preprocessing, machine learning, and clustering techniques to classify primary use and identify distinct usage patterns. The final application will be an interactive Streamlit interface featuring EDA visualizations and model results.
 
-Business Use Cases
+## Business Use Cases
 
-Behavioral Insights: Provide insights into user behavior patterns based on device usage metrics.
+- **Behavioral Insights:** Provide insights into user behavior patterns based on device usage metrics.
+- **Device Optimization:** Assist manufacturers in optimizing device performance based on usage data.
+- **Personalized Services:** Enable businesses to personalize offerings based on identified user segments.
+- **Energy Efficiency:** Help users understand battery drain patterns and optimize device usage.
 
-Device Optimization: Assist manufacturers in optimizing device performance based on usage data.
+## Approach
 
-Personalized Services: Enable businesses to personalize offerings based on identified user segments.
+### 1. Data Preparation:
 
-Energy Efficiency: Help users understand battery drain patterns and optimize device usage.
+- Utilize a dataset with user IDs, device models, OS, and usage statistics.
+- Merge and preprocess the dataset to ensure consistency and accuracy.
 
-Approach
+### 2. Data Cleaning:
 
-1. Data Preparation:
+- Handle missing values using imputation techniques.
+- Standardize formats for OS and device models.
+- Remove outliers based on statistical thresholds.
 
-Utilize a dataset with user IDs, device models, OS, and usage statistics.
+### 3. Exploratory Data Analysis (EDA):
 
-Merge and preprocess the dataset to ensure consistency and accuracy.
+- Analyze trends in mobile app usage, screen-on time, and battery consumption.
+- Visualize correlations between features like data usage and battery drain.
+- Identify patterns in Primary Use Class.
 
-2. Data Cleaning:
+### 4. Machine Learning and Clustering:
 
-Handle missing values using imputation techniques.
+#### Classification Models:
 
-Standardize formats for OS and device models.
+- Logistic Regression
+- Decision Trees
+- Random Forest
+- Gradient Boosting (XGBoost, LightGBM)
 
-Remove outliers based on statistical thresholds.
+#### Clustering Techniques:
 
-3. Exploratory Data Analysis (EDA):
+- K-Means
 
-Analyze trends in mobile app usage, screen-on time, and battery consumption.
+- Hierarchical Clustering
 
-Visualize correlations between features like data usage and battery drain.
+- DBSCAN
 
-Identify patterns in Primary Use Class.
+- Gaussian Mixture Models
 
-4. Machine Learning and Clustering:
-
-Classification Models:
-
-Logistic Regression
-
-Decision Trees
-
-Random Forest
-
-Gradient Boosting (XGBoost, LightGBM)
-
-Clustering Techniques:
-
-K-Means
-
-Hierarchical Clustering
-
-DBSCAN
-
-Gaussian Mixture Models
-
-Spectral Clustering
+- Spectral Clustering
 
 
 
-5. Application Development:
+### 5. Application Development:
 
-Build a Streamlit interface to display EDA insights, classification predictions, and clustering results.
+- Build a Streamlit interface to display EDA insights, classification predictions, and clustering results.
 
-6. Deployment:
+### 6. Deployment:
 
-Deploy the Streamlit application for user interaction.
+- Deploy the Streamlit application for user interaction.
 
-Data Flow and Architecture
+## Data Flow and Architecture
 
-Data Preparation:
+### Data Preparation:
 
-Clean and preprocess the dataset using Pandas and NumPy.
+- Clean and preprocess the dataset using Pandas and NumPy.
 
-Processing Pipeline:
+### Processing Pipeline:
 
-Perform EDA and feature engineering for ML models.
+- Perform EDA and feature engineering for ML models.
 
-Model Training:
+### Model Training:
 
-Train classification and clustering models using Scikit-learn, TensorFlow, or PyTorch.
+- Train classification and clustering models using Scikit-learn, TensorFlow, or PyTorch.
+- Save trained models for deployment.
 
-Save trained models for deployment.
+### Deployment:
 
-Deployment:
+- Develop a Streamlit-based interface.
 
-Develop a Streamlit-based interface.
+## Deliverables
 
-Deliverables
-
-Data Preparation: Clean and merge the dataset for analysis.
-
-Machine Learning Models: Train and evaluate classification and clustering models.
-
-Application Development: Develop a Streamlit interface to display results and predictions.
+- **Data Preparation:** Clean and merge the dataset for analysis.
+- **Machine Learning Models:** Train and evaluate classification and clustering models.
+- **Application Development:** Develop a Streamlit interface to display results and predictions.
 
